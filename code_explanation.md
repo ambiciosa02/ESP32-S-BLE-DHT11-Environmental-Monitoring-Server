@@ -4,7 +4,7 @@ Here is a detailed, section-by-section breakdown of how the ESP32 BLE + DHT11 co
 
 ### 1. Library Includes & Hardware Definitions
 
-
+```cpp
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
@@ -14,7 +14,7 @@ Here is a detailed, section-by-section breakdown of how the ESP32 BLE + DHT11 co
 #define DHTPIN 4
 Bonezegei_DHT11 dht(DHTPIN);
 
-
+```
 
 * **BLE Headers:** Load the ESP32 BLE stack to manage GATT server setup, device initialization, characteristic attributes, and client configuration descriptors.
 * **DHT Library & Pin Setup:** Imports the `Bonezegei_DHT11` library and initializes an instance connected to **GPIO 4**.
